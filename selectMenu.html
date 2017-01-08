@@ -1,0 +1,48 @@
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>QUIZVIE</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/bulma.css">
+
+<script type="text/javascript">
+<!--ß
+function url_jump() {
+	var num = document.form1.select1.selectedIndex;
+	location.href = document.form1.select1.options[num].value;
+}
+// -->
+</script>
+</head>
+<body>
+      <div class="nav-left">
+      <a class="nav-item is-brand" href="#">
+        <img src="./images/qv-logo.png" alt="QUIZVUE">
+      </a>
+    </div>
+<form action="#" name="form1">
+<select name="select1">
+<option value="#">問題数を選択
+<option value="index.html#1">1問
+<option value="index.html#2">2問
+<option value="index.html#4">4問
+<option value="index.html#10">10問
+<option value="index.html#20">20問
+<option value="index.html#30">30問
+<option value="index.html#40">40問
+<option value="index.html#50">50問
+<option value="index.html#60">60問
+<option value="index.html#70">70問
+<option value="index.html#80">80問
+</select>
+<input type="button" value="出題開始" onclick="url_jump();">
+<!-- button class="button is-primary" v-on:click="jampIndex">出題開始</buttno -->
+</form>
+  <script src="lib/vue.min.js"></script>
+  <script src="lib/lodash.min.js"></script>
+  <script src="lib/marked.min.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
